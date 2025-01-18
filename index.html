@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+   <!--=================== FAVICON ==================-->
+   <link rel="shortcut-icon" href="Images/favicon.png" type="image/x-icon">
+
+   <!--=================== REMIXICON ================-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="" referrerpolicy="no-referrer" />
+
+   <!--=================== CSS ======================-->
+   <link rel="stylesheet" href="style.css">
+
+   <!--===================Script=====================-->
+   <script src="JS/main.js" defer></script>
+   <script src="JS/scrollreveal.min.js"></script>
+   
+   <title>PortFolio-Aryan Mittal</title>
+
+   <!-- Add smooth scrolling -->
+   <style>
+
+      html {
+         scroll-behavior: smooth;
+      }
+      section {
+         min-height: 100vh; /* Ensure sections are tall enough */
+         padding: 20px;
+      }
+
+   </style>
+</head>
+<body>
+   <!--================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav_logo">
+            <span class="nav_logo-circle">A</span>
+            <span class="nav_logo-name">Aryan Mittal.</span>
+         </a>
+
+         <div class="nav_menu" id="nav-menu">
+            <ul class="nav_list">
+               <li class="nav_items">
+                  <a href="#home" class="nav_link active">Home</a>
+               </li>
+               <li class="nav_items">
+                  <a href="#about" class="nav_link">About me</a>
+               </li>
+               <li class="nav_items">
+                  <a href="#projects" class="nav_link">Projects</a>
+               </li>
+               <li class="nav_items">
+                  <a href="#contact" class="nav_link contact-btn">Contact Me</a>
+               </li>
+            </ul>
+
+            <div class="nav_close" id="nav-close">
+               <i class="ri-close-line"></i>
+            </div>
+         </div>
+
+         <div class="nav_buttons">
+            <div class="nav_toggle" id="nav-toggle">
+               <i class="ri-menu-4-line"></i>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <!--======================== Home ============================-->
+   <section id="home" class="home">
+         <div class="section_pic">
+            <img src="Images/Profile-pic-2.jpg" alt="Profile Picture" class="section_pic_img">
+         </div>
+         <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="section_text_h1"><span class="name">Aryan</span> Mittal</h1>
+            <p class="section_text_p2">Fullstack Developer</p>
+            <div class="btn-container">
+               <a href="assets/Resume.pdf">
+                  <button class="btn btn-color">Download Resume</button>
+               </a>
+            </div>
+         <div class="social-container">
+            <i class="ri-github-fill social" onclick="window.open('https://github.com/TechyAryan')"></i>
+            <i class="ri-linkedin-box-fill social" onclick="window.open('https://www.linkedin.com/in/aryan-mittal-2580ab338')"></i>
+            <i class="ri-instagram-fill social" onclick="window.open('https://www.instagram.com/aryanegtiv?igsh=cHkweDNpYTQzaHRr')"></i>
+         </div>
+      </div>
+   </section>
+
+   <!--============================ About Me =======================-->
+   <section id="about" class="about">
+      <div class="conatainer">
+         <div class="img_container">
+            <div class="about_pic">
+               <img src="Images/Profile-pic.jpg" alt="Profile Picture" class="about_pic_img">
+            </div>
+            <div class="about_box"></div>
+         </div>
+      </div>
+      <div class="text_container">
+         <h1 class="about_text_h1">About Me.</h1>
+         <p class="about_text_p">I am a passionate Full-Stack Web Developer, currently learning and improving my skills. I have completed<span class="about_dsa"> Data Structures and Algorithms (DSA) in Java</span> and am excited to continue growing in the field of web development. 
+            I enjoy solving problems and building applications that make a difference.</p>
+         <p class="about_text_p"><span class="about_heading">Education : </span>
+            B.Tech CSE Student at Maharaja Agrasen Institue of Technology (2023-27)</p>
+
+         <img src="Images/random-lines.svg" alt="Random Lines" class="random_lines">
+         
+         <div class="skills">
+            <p class="about_text_p"><span class="about_heading">Skills : </span></p>   
+            <div class="skills_image">
+               <img src="Images/html.svg" alt="HTML" class="about_html">
+               <img src="Images/css.svg" alt="CSS" class="about_css">
+               <img src="Images/javascript.svg" alt="JAVASCRIPT" class="about_js">
+               <img src="Images/react.svg" alt="REACT" class="about_react">
+               <img src="Images/nodejs.svg" alt="NODEJS" class="about_nodejs">
+               <img src="Images/mongodb.svg" alt="MONGODB" class="about_mongodb">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- =========================== Projects ======================== -->
+    <section id="projects" class="projects">
+      <div class="project_container">
+         <p class="project_browse">Browse My Recent</p>
+         <h1 class="project_heading">Projects.</h1>
+      </div>
+
+      <div class="project_list">
+         <div class="project_row">
+            <div class="project_card">
+               <img src="Images/Yelpcamp.jpg" alt="YelpCamp" class="project_img">
+               <i class="ri-arrow-right-up-line arrow" onclick="window.open('https://yelpcamp-5bnt.onrender.com')"></i>
+               <h1 class="project_title">Yelpcamp</h1>
+               <p class="project_text">Yelpcamp is a platform where users can discover, share, and review campgrounds. It allows outdoor enthusiasts to find and rate camping spots, view photos, and share their experiences.</p>
+               <div class="project_socials">
+                  <i class="ri-github-fill project_social" onclick="window.open('https://github.com/TechyAryan/YelpCamp')"></i>
+                  <i class="ri-linkedin-box-fill project_social" onclick="window.open('https://lnkd.in/eMgH8Sp9')"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+    </section>
+
+    <!--================================= Contact ==================-->
+    <section id="contact" class="contact">
+      <div class="contact_container">
+         <p class="contact_p">Get In Touch</p>
+         <h1 class="contact_title">Contact Me</h1>
+         <div class="mail_container">
+            <i class="ri-mail-line mail_img"></i>
+            <a href="mailto:aryanmittal961@gmail.com" class="mail">aryanmittal961@gmail.com</a>
+         </div>
+      </div>
+      <!--============================= Footer =====================-->
+      <footer class="footer">
+           <p class="footer_text"> Copyright &#169; 2025 Aryan Mittal </p>
+      </footer>
+    </section>
+</body>
+</html>
